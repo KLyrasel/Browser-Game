@@ -1,1 +1,2 @@
 # Browser-Game
+Making a choose your own adventure game that has a wizard frog that needs to get through many different obstacles in order to turn himself back into a human, with the end result being that if the user wins the game, the frog successfully turns back into a human, but if they lose then he remains a frog forever. 
