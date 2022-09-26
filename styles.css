@@ -1,0 +1,36 @@
+* {
+    margin:0%;
+    padding: 0%;
+}
+.main-nav {
+    position:fixed;
+    position:sticky;
+    display: flex;
+    align-items:center;
+    text-align:center;
+    font-family: fantasy;
+    font-weight:lighter;
+    text-shadow: 2px 2px lightgrey;
+    font-size: 50px;
+    padding-left: 22rem;
+}
+
+a {
+    text-decoration: none;
+    display:inline-block;
+    color:green;
+}
+
+.nav-item {
+text-decoration: none;
+display:inline-block;
+padding: 2rem;
+}
+
+.grass {
+position: bottom-center;
+padding: 0%;
+margin-bottom: 0%;
+width:fit-content;
+height: 50rem;
+}
