@@ -1,21 +1,40 @@
-// 1. make a word bank that players can't see
-// 2. Have the player make a decision
-// 3. Progress the game based off of character choice
-// 4. Repeat until ending
+// 1. make a word bank that players can't see (DONE)
+// 2. have the game choose a random word
+// 3. have the players input compared to the word the game has chosen 
+// 4. show amount of "lives" left if incorrect guess or have correct letters shown 
+// 5. show win or lose 
+// 6. give option to reset the game and try again 
 
- let wordBank = [
-    [ "M", "O", "U", "S", "E"],
-    ["C","H","E","E","S","E"],
-    ["S","N","E","A","K","Y"],
-    ["T","R","A","P"],
-    ["G","A","M","E","S"],
-    ["R","A","N","D","O","M"],
-    ["H","U","N","G","R","Y"],
-    ["F","E","A","S","T"],
-    ["A","B","R","U","P","T","L","Y"],
-    
+
+//wordbank 
+ var wordBank = [
+    "cat",
+    "dog",
+    "mouse",
+    "cheese",
+    "food",
+    "hungry",
+    "scurries",
+    "sneaky",
+    "kazoo",
+    "discovered",
+    "kitchen",
+    "games",
+    "winner",
+    "difficult",
+    "easy"
     ]
- ]
+ 
+var randomWord = wordBank[Math.floor(Math.random()*wordBank.length)]
+
+for (var i = 0; i < wordBank.length; i++) {
+    answerArray[i] = "_";
+}
+
+    
+    
+
+
 
 
 
