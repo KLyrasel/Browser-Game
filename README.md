@@ -1,2 +1,2 @@
 # Browser-Game
-Making a version of hangman for two people.
+Making a version of hangman in which the player is able to help a mouse sneak to get a piece of cheese, every correct guess gets the mouse closer to the cheese, and every wrong guess alerts the owners of the house to the mouse being there. If the word isn't guessed within the amount of chances, the mouse is discovered and has to run away, not getting the cheese. If the word is guessed correctly then the mouse is able to get the cheese succesfully. 
