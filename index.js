@@ -1,41 +1,20 @@
-// 1. make a word bank that players can't see (DONE)
-// 2. have the game choose a random word
-// 3. have the players input compared to the word the game has chosen 
-// 4. show amount of "lives" left if incorrect guess or have correct letters shown 
-// 5. show win or lose 
-// 6. give option to reset the game and try again 
+var character = document.getElementById("character");
+var obstacles = document.getElementById("obstacles");
+var counter = 0;
 
 
-//wordbank 
- var wordBank = [
-    "cat",
-    "dog",
-    "mouse",
-    "cheese",
-    "food",
-    "hungry",
-    "scurries",
-    "sneaky",
-    "kazoo",
-    "discovered",
-    "kitchen",
-    "games",
-    "winner",
-    "difficult",
-    "easy"
-    ]
- 
-var randomWord = wordBank[Math.floor(Math.random()*wordBank.length)]
-
-for (var i = 0; i < wordBank.length; i++) {
-    answerArray[i] = "_";
+document.addEventListener("click",jump);
+function jump() {
+    character.classList.add("movement");
+    setTimeout(removeJump,300);
 }
 
-    
-    
+function removeJump() {
+    character.classList.remove("movement")
+}
 
 
-
-
-
-
+var lost = setInterval(function(){
+    var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
+var obstacleLeft = parseInt(window.getComputedStyle(obstacles).getPropertyValue("left"));
+})

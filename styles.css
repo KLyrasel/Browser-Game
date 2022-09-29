@@ -1,12 +1,48 @@
 body {
-    background-color:#f7f7f7;
-    text-align:center;
+    background-image: url("https://i.pinimg.com/originals/de/40/8c/de408c8c2e7f7c376cbc239ad2254189.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:green;
 }
 
-button {
-    width: 100px;
-    height: 50px;
-    font-weight: bold;
-    background-color: ghostwhite;
-    border-radius: 50px;
+
+#character {
+    width:30px;;
+    height: 70px;
+    background-color:plum;
+    border: solid black;
+    position: relative;
+    top: 40rem;
+    left: 3rem;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    30%{top: 100px;}
+    70%{top: 100px;}
+    100%{top: 150px;}
+}
+
+.movement{
+    animation: jump 300ms linear;
+}
+
+#obstacles{
+
+    width:25px;
+    height:25px;
+    background-color: red;
+    border: solid black;
+    position: relative;
+    top: 38rem;
+    left: 600px;
+    animation: block 1s infinite linear;
+}
+
+
+
+
+@keyframes block{
+    0%{left:600px;} 
+    100%{left: -600px;}
 }
