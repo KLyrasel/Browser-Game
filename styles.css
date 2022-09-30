@@ -1,20 +1,27 @@
 body {
-    background-image: url("https://i.pinimg.com/originals/de/40/8c/de408c8c2e7f7c376cbc239ad2254189.png");
+    margin: 0;
+    padding: 0;
+    background-image: url("PNG/City4/Bright/City4.png");
+    position:fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color:green;
 }
 
-
-#character {
-    width:30px;;
-    height: 70px;
-    background-color:plum;
+/*this is our background, we use a sky image and fill it then use a grass image and repeat it sideways to fill the space*/
+#loss{
+    background-color: ghostwhite;
     border: solid black;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#character {
     position: relative;
-    top: 40rem;
+    top: 37rem;
     left: 3rem;
 }
+
+/*this creates our playable character and gives it color and an outline so it is easy to see. the top and left position it where i want it to start in the game
+ and relative position allows me to adjust it away from its regular position in a way that works better for the game*/
 
 @keyframes jump{
     0%{top: 150px;}
@@ -22,27 +29,24 @@ body {
     70%{top: 100px;}
     100%{top: 150px;}
 }
-
+/*keyframes allow me to animate my character, so when it jumps it goes up and down smoothly. adding more keyframes could make
+it look smoother but I used keyframe jumps from "" and that worked well enough for the game for me. we are using the jump animation here to get it to jump when clicked*/
 .movement{
-    animation: jump 300ms linear;
+    animation: jump 250ms linear;
 }
 
 #obstacles{
-
-    width:25px;
-    height:25px;
-    background-color: red;
-    border: solid black;
     position: relative;
-    top: 38rem;
-    left: 600px;
-    animation: block 1s infinite linear;
+    top: 20.5rem;
+    left:70rem;
+    animation: block 2.5s infinite linear
 }
 
-
+/*finally, we want our obstacle, or our block that our character needs to jump over, to be a bit smaller and we want it constantly sliding towards the side of 
+the screen that our character is on. we need it to do that infinitely so we use an infinte linear animation and then add keyframes to make it constantly slide to the left */
 
 
 @keyframes block{
-    0%{left:600px;} 
-    100%{left: -600px;}
+    0%{left: 150rem;} 
+    100%{left: -150rem;}
 }
