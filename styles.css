@@ -72,16 +72,12 @@ it look smoother but I used keyframe jumps from "" and that worked well enough f
     height: 50px;
     width: 50px;
 }
-
-/*finally, we want our obstacle, or our block that our character needs to jump over, to be a bit smaller and we want it constantly sliding towards the side of 
-the screen that our character is on. we need it to do that infinitely so we use an infinte linear animation and then add keyframes to make it constantly slide to the left */
-
 @keyframes slide{
     0%{left: 2000px;} 
     100%{left: -50px;}
 }
-
+/*these keyframes allow my pumpkin to slide towards the left starting from off the screen*/
 audio{
     display: none;
 }
-
+    
