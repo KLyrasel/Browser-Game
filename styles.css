@@ -7,27 +7,45 @@ body {
     background-repeat: no-repeat;
 }
 
-/*this is our background, we use a sky image and fill it then use a grass image and repeat it sideways to fill the space*/
-#loss{
-    background-color: ghostwhite;
-    border: solid black;
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-}
-#character {
-    position: relative;
-    top: 37rem;
-    left: 3rem;
+.container{
+position: absolute;
+top: 63%;
+height: 600px;
+width: 700px;
+left: 50px;
+top: 550px;
+border: solid hotpink;
 }
 
+h1{
+    text-align: center;
+    position: absolute;
+    padding: 15px 60px 15px 60px;
+    left: 800px;
+    top: 50px;
+    background-color: ghostwhite;
+    border: solid black;
+    box-shadow: 2px black;
+}
+#cat {
+    height:100px;
+    width:100px;
+    border: solid white;
+    position: relative;
+    top: 200px;
+}
+.cat {
+    height: 400px;
+    width: 400px;
+}
 /*this creates our playable character and gives it color and an outline so it is easy to see. the top and left position it where i want it to start in the game
  and relative position allows me to adjust it away from its regular position in a way that works better for the game*/
 
 @keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+    0%{top: -50px;}
+    30%{top: -100px;}
+    70%{top: -100px;}
+    100%{top: -50px;}
 }
 /*keyframes allow me to animate my character, so when it jumps it goes up and down smoothly. adding more keyframes could make
 it look smoother but I used keyframe jumps from "" and that worked well enough for the game for me. we are using the jump animation here to get it to jump when clicked*/
@@ -35,18 +53,21 @@ it look smoother but I used keyframe jumps from "" and that worked well enough f
     animation: jump 250ms linear;
 }
 
-#obstacles{
+#pumpkin .pumpkin{
+    border:solid red;
+    height: 50px;
+    width: 50px;
+    padding-top: 135px;
     position: relative;
-    top: 20.5rem;
-    left:70rem;
-    animation: block 2.5s infinite linear
+    top: 150px;
+    left: 350px;
+    animation: block 2s infinite linear;
 }
 
 /*finally, we want our obstacle, or our block that our character needs to jump over, to be a bit smaller and we want it constantly sliding towards the side of 
 the screen that our character is on. we need it to do that infinitely so we use an infinte linear animation and then add keyframes to make it constantly slide to the left */
 
-
 @keyframes block{
-    0%{left: 150rem;} 
-    100%{left: -150rem;}
+    0%{left: 2000px;} 
+    100%{left: -50px;}
 }
