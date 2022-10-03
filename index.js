@@ -5,7 +5,7 @@
 //Find parameters of the pumpkin and the cat
 //Make an if statement saying if the cat and pumpkin collide with each other, the game is over and display the number of successful jumps 
 //Display loss and score with innerHTML
-var character = document.getElementById("cat");
+var character = document.getElementById("ghost");
 var obstacles = document.getElementById("pumpkin");
 
 let counter = 0;
@@ -21,8 +21,8 @@ function removeJump() {
 }
 
 
-var catTop = parseIntwindow.getComputedStyle(cat).getComputedStyle("top");
-var pumpkinLeft = parseIntwindow.getComputedStyle(pumpkin).getComputedStyle("left");
+var ghostTop = parseIntwindow.getComputedStyle(ghost).getComputedStyle("top");
+var ghostLeft = parseIntwindow.getComputedStyle(pumpkin).getComputedStyle("left");
 
 if( catTop >= 150 && pumpkinLeft < 50 && pumpkinLeft > -50){
     document.getElementById("loss").innerHTML = " YOU LOSE "

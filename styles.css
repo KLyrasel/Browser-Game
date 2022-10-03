@@ -25,18 +25,18 @@ h1{
     top: 50px;
     background-color: ghostwhite;
     border: solid black;
-    box-shadow: 2px black;
+    box-shadow: 2px
 }
-#cat {
+#ghost {
     height:100px;
     width:100px;
     border: solid white;
     position: relative;
-    top: 200px;
+    top: 325px;
 }
-.cat {
-    height: 400px;
-    width: 400px;
+.ghost {
+    height: 100x;
+    width: 100px;
 }
 /*this creates our playable character and gives it color and an outline so it is easy to see. the top and left position it where i want it to start in the game
  and relative position allows me to adjust it away from its regular position in a way that works better for the game*/
@@ -71,3 +71,4 @@ the screen that our character is on. we need it to do that infinitely so we use 
     0%{left: 2000px;} 
     100%{left: -50px;}
 }
+
