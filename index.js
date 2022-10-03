@@ -2,8 +2,9 @@
 //2.Define counter
 //3.Add click jump event
 //4.Create function so that jump event can repeat instead of stopping after one jump
-//Find parameters of the pumpkin and the ghost
-//Make an if statement saying if the ghost and pumpkin collide with each other, the game is over
+//5.Create counter so it goes up by one with every click/time alive
+//6.Find parameters of the pumpkin and the ghost
+//7.Make an if statement saying if the ghost and pumpkin collide with each other, the game is over
 
 
 //defines my variables
@@ -28,6 +29,7 @@ function scorecount(){
 }
 
 var infinite = setInterval(scorecount, 100);
+
 //removejump function so that you can jump more than once
 function removeJump() {
     ghost.classList.remove("movement")
