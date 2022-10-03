@@ -28,13 +28,14 @@ h3{
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
+    font-size: 35px;
     padding: 50px 60px 15px 60px;
-    left: 850px;
+    left: 835px;
     top: 206px;
     background-color: transparent;
     border: solid transparent;
     box-shadow: 2px;
-    text-shadow: 2px 
+    text-shadow: .5px .5px #55b6bd;
 }
 
 #ghost {

@@ -40,4 +40,5 @@ let collison = setInterval(function(){
     let pumpkinLeft = parseInt(window.getComputedStyle(pump).getPropertyValue("left"));
 if ( ghostTop >= 150 && pumpkinLeft < 50 && pumpkinLeft > 0 ) {
     alert("GAME OVER");
+    counter = 0;
 } },10 )
