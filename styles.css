@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("PNG/City4/Bright/City4.png");
+    background-image: url("3_game_background.png");
     position:fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ it look smoother but I used keyframe jumps from "" and that worked well enough f
     width: 50px;
     padding-top: 135px;
     position: relative;
-    top: 150px;
+    top: 142px;
     left: 350px;
     animation: block 2s infinite linear;
 }
@@ -70,5 +70,9 @@ the screen that our character is on. we need it to do that infinitely so we use 
 @keyframes block{
     0%{left: 2000px;} 
     100%{left: -50px;}
+}
+
+audio{
+    display: none;
 }
 
