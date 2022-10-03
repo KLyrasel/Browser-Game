@@ -13,7 +13,6 @@ var score = document.getElementById("points")
 //creating counter 
 let counter = 0;
 
-
 //adding a click event to get ghost to jump
 document.addEventListener("click", jump);
 function jump() {
