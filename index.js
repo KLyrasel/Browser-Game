@@ -8,6 +8,7 @@
 //Get game to speed up after certain amount of time 
 var character = document.getElementById("ghost");
 var obstacles = document.getElementById("pumpkin");
+var score = document.getElementById("points")
 
 let counter = 0;
 
@@ -17,6 +18,15 @@ function jump() {
     setTimeout(removeJump,300);
     counter++;
 }
+
+
+function scorecount(){
+    counter = counter + 1;
+    score.innerText = "Score: " + counter;
+}
+
+var infinite = setInterval(scorecount, 100);
+
 function removeJump() {
     character.classList.remove("movement")
 }
@@ -25,6 +35,6 @@ function removeJump() {
 var ghostTop = parseIntwindow.getComputedStyle(ghost).getComputedStyle("top");
 var ghostLeft = parseIntwindow.getComputedStyle(pumpkin).getComputedStyle("left");
 
-if( ghostTop >= 325 && pumpkinLeft < 50 && pumpkinLeft > 0){
+if( ghostTop >= 130 && pumpkinLeft < 20 && pumpkinLeft > -20){
     alert("you lose");
 }

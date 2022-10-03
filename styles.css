@@ -27,6 +27,19 @@ h1{
     border: solid black;
     box-shadow: 2px
 }
+
+h3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    padding: 50px 60px 15px 60px;
+    left: 800px;
+    top: 206px;
+    background-color: transparent;
+    border: solid transparent;
+    box-shadow: 2px;
+}
+
 #ghost {
     height:100px;
     width:100px;
