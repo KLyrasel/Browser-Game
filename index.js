@@ -24,6 +24,6 @@ function removeJump() {
 var ghostTop = parseIntwindow.getComputedStyle(ghost).getComputedStyle("top");
 var ghostLeft = parseIntwindow.getComputedStyle(pumpkin).getComputedStyle("left");
 
-if( catTop >= 150 && pumpkinLeft < 50 && pumpkinLeft > -50){
+if( ghostTop >= 150 && pumpkinLeft < 50 && pumpkinLeft > -50){
     document.getElementById("loss").innerHTML = " YOU LOSE "
 }
