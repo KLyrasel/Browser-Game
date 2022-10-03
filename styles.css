@@ -9,12 +9,8 @@ body {
 
 .container{
 position: absolute;
-top: 63%;
-height: 600px;
-width: 700px;
-left: 50px;
-top: 550px;
-border: solid hotpink;
+width: 1914px;
+height:1000px;
 }
 
 h1{
@@ -33,19 +29,20 @@ h3{
     font-family: 'Times New Roman', Times, serif;
     position: absolute;
     padding: 50px 60px 15px 60px;
-    left: 800px;
+    left: 850px;
     top: 206px;
     background-color: transparent;
     border: solid transparent;
     box-shadow: 2px;
+    text-shadow: 2px 
 }
 
 #ghost {
     height:100px;
     width:100px;
-    border: solid white;
     position: relative;
-    top: 325px;
+    top: 875px;
+    left: 0px;
 }
 .ghost {
     height: 100x;
@@ -55,10 +52,10 @@ h3{
  and relative position allows me to adjust it away from its regular position in a way that works better for the game*/
 
 @keyframes jump{
-    0%{top: -50px;}
-    30%{top: -100px;}
-    70%{top: -100px;}
-    100%{top: -50px;}
+    0%{top: 100px;}
+    30%{top: 90px;}
+    70%{top: 80px;}
+    100%{top: 100px;}
 }
 /*keyframes allow me to animate my character, so when it jumps it goes up and down smoothly. adding more keyframes could make
 it look smoother but I used keyframe jumps from "" and that worked well enough for the game for me. we are using the jump animation here to get it to jump when clicked*/
@@ -66,15 +63,14 @@ it look smoother but I used keyframe jumps from "" and that worked well enough f
     animation: jump 250ms linear;
 }
 
-#pumpkin .pumpkin{
-    border:solid red;
+#pumpkin{
+    position: relative;
+    top: 820px;
+    animation: slide 2s infinite linear;
+}
+.pumpkin{
     height: 50px;
     width: 50px;
-    padding-top: 135px;
-    position: relative;
-    top: 142px;
-    left: 350px;
-    animation: slide 2s infinite linear;
 }
 
 /*finally, we want our obstacle, or our block that our character needs to jump over, to be a bit smaller and we want it constantly sliding towards the side of 
